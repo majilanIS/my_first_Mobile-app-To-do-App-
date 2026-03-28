@@ -71,7 +71,7 @@ const darkColors: ColorScheme = {
     danger: "#f87171",
     shadow: "#000000",
     gradients: {
-        background: ["#0f172a", "#1e293b"],
+        background: ["#fff", "#1e293b"],
         surface: ["#1e293b", "#334155"],
         primary: ["#3b82f6", "#1d4ed8"],
         success: ["#10b981", "#059669"],
@@ -119,7 +119,7 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     );
 };
 
- const useTheme = () => {
+const useTheme = () => {
     const context = useContext(ThemeContext);
     if (context === undefined) {
         throw new Error("useTheme must be used within a ThemeProvider");
